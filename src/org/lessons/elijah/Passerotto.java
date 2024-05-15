@@ -1,6 +1,6 @@
 package org.lessons.elijah;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements AnimaleVolante{
 
 	@Override
 	public void verso() {
