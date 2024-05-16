@@ -1,38 +1,39 @@
 package org.lessons.elijah;
 
-public class Main {
-
+public class UsaAnimali {
+	
 	public static void main(String[] args) {
-		
 		System.out.println("CANE");
 		Cane cane = new Cane();
-		cane.dormi();
-		cane.verso();
-		cane.mangia();
+		faiNuotare(cane);
+		faiScondinzolare(cane);
 		System.out.println();
 		
 		System.out.println("PASSEROTTO");
 		Passerotto passerotto = new Passerotto();
-		passerotto.dormi();
-		passerotto.verso();
-		passerotto.mangia();
+		faiVolare(passerotto);
 		System.out.println();
 		
 		System.out.println("AQUILA");
 		Aquila aquila = new Aquila();
-		aquila.dormi();
-		aquila.verso();
-		aquila.mangia();
+		faiVolare(aquila);
 		System.out.println();
 		
 		System.out.println("DELFINO");
 		Delfino delfino = new Delfino();
-		delfino.dormi();
-		delfino.verso();
-		delfino.mangia();
+		faiNuotare(delfino);
 		System.out.println();
-		
-
 	}
-
+	
+	public static void faiNuotare(INuotante animale) {
+		animale.nuota();
+	}
+	
+	public static void faiVolare(IVolante animale) {
+		animale.vola();
+	}
+	
+	public static void faiScondinzolare(IScondinzola animale) {
+		animale.scondimzola();
+	}
 }

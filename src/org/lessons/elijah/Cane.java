@@ -1,6 +1,6 @@
 package org.lessons.elijah;
 
-public class Cane extends Animale implements IScondinzola {
+public class Cane extends Animale implements IScondinzola, INuotante {
 
 	@Override
 	public void verso() {
@@ -17,6 +17,11 @@ public class Cane extends Animale implements IScondinzola {
 	@Override
 	public void scondimzola() {
 		System.out.println("Sto scondinzolando");
+	}
+
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotando");
 	}
 
 }
