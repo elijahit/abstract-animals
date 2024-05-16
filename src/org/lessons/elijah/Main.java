@@ -3,13 +3,13 @@ package org.lessons.elijah;
 public class Main {
 
 	public static void main(String[] args) {
-		AnimaleMovements movements = new AnimaleMovements();
 		
 		System.out.println("CANE");
 		Cane cane = new Cane();
 		cane.dormi();
 		cane.verso();
 		cane.mangia();
+		cane.scondimzola();
 		System.out.println();
 		
 		System.out.println("PASSEROTTO");
@@ -17,7 +17,7 @@ public class Main {
 		passerotto.dormi();
 		passerotto.verso();
 		passerotto.mangia();
-		movements.vola(passerotto);
+		passerotto.vola();
 		System.out.println();
 		
 		System.out.println("AQUILA");
@@ -25,7 +25,7 @@ public class Main {
 		aquila.dormi();
 		aquila.verso();
 		aquila.mangia();
-		movements.vola(aquila);
+		aquila.vola();
 		System.out.println();
 		
 		System.out.println("DELFINO");
@@ -33,7 +33,7 @@ public class Main {
 		delfino.dormi();
 		delfino.verso();
 		delfino.mangia();
-		movements.nuota(delfino);
+		delfino.nuota();
 		System.out.println();
 		
 

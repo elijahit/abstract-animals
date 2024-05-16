@@ -1,6 +1,6 @@
 package org.lessons.elijah;
 
-public class Aquila extends Animale implements AnimaleVolante {
+public class Aquila extends Animale implements IVolante {
 
 	@Override
 	public void verso() {
@@ -11,6 +11,12 @@ public class Aquila extends Animale implements AnimaleVolante {
 	@Override
 	public void mangia() {
 		System.out.println("Mangia la Carne");
+		
+	}
+
+	@Override
+	public void vola() {
+		System.out.println("Sto volando");
 		
 	}
 
